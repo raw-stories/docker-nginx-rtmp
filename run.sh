@@ -10,8 +10,6 @@ for PUSH_URL in $(echo ${RTMP_PUSH_URLS}); do
     push ${PUSH_URL};
 !EOF
 done
-echo "Config :"
-cat ${NGINX_CONFIG_FILE}
 
 echo "Starting server..."
 /opt/nginx/sbin/nginx
