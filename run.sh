@@ -11,8 +11,8 @@ if [ "x${RTMP_PUSH_URLS}" = "x" ]; then
         push ${PUSH_URL};
 !EOF
     done
+    cat ${NGINX_CONFIG_FILE}
 fi
-!EOF
 
 echo "Starting server..."
 /opt/nginx/sbin/nginx -g "daemon off;"
