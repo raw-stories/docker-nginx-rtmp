@@ -15,4 +15,4 @@ if [ "x${RTMP_PUSH_URLS}" = "x" ]; then
 fi
 
 echo "Starting server..."
-/opt/nginx/sbin/nginx -g "daemon off;"
+/opt/nginx/sbin/nginx
